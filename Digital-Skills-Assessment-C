@@ -1,0 +1,74 @@
+#include <stdio.h>
+
+int main()
+{
+    int choice, score = 0;
+
+    printf("================================\n");
+    printf(" DIGITAL SKILLS ASSESSMENT\n");
+    printf("================================\n");
+
+    printf("\n1. What does AI stand for?\n");
+    printf("1. Automatic Internet\n");
+    printf("2. Artificial Intelligence\n");
+    printf("3. Advanced Information\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
+
+    if (choice == 2)
+        score++;
+
+    printf("\n2. Which is a programming language?\n");
+    printf("1. C\n");
+    printf("2. Google\n");
+    printf("3. Windows\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
+
+    if (choice == 1)
+        score++;
+
+    printf("\n3. What is used to browse websites?\n");
+    printf("1. Calculator\n");
+    printf("2. Web Browser\n");
+    printf("3. Paint\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
+
+    if (choice == 2)
+        score++;
+
+    printf("\n4. What is machine learning?\n");
+    printf("1. A type of printer\n");
+    printf("2. A method that learns patterns from data\n");
+    printf("3. An operating system\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
+
+    if (choice == 2)
+        score++;
+
+    printf("\n5. Which is a safe online practice?\n");
+    printf("1. Sharing passwords\n");
+    printf("2. Clicking every unknown link\n");
+    printf("3. Using strong passwords\n");
+    printf("Enter your answer: ");
+    scanf("%d", &choice);
+
+    if (choice == 3)
+        score++;
+
+    printf("\n================================\n");
+    printf("       ASSESSMENT RESULT\n");
+    printf("================================\n");
+    printf("Your Score: %d/5\n", score);
+
+    if (score >= 4)
+        printf("Performance: Excellent!\n");
+    else if (score >= 3)
+        printf("Performance: Good!\n");
+    else
+        printf("Performance: Keep Practicing!\n");
+
+    return 0;
+}
